@@ -11,7 +11,7 @@ max_col = sheet.max_column
 max_row = sheet.max_row
 ip = 10
 teil = []
-file = open('name_ip.txt', 'w')
+
 for j in range(2, max_row + 1):
     sub = sheet.cell(row=j, column=1).value[0:2] + sheet.cell(row=j, column=2).value[0]
     c = 1
