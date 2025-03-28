@@ -12,6 +12,6 @@ max_row = sheet.max_row
 ip = 10
 
 for x in range(2,max_row):
-    print(f'\t\t\t\t- to {sheet.cell(row=x, column=4).value}')
-    print(f'\t\t\t\t\tvia {sheet.cell(row=x, column=5).value}')
+    print(f'\t\t\t\t- to {sheet.cell(row=x, column=4).value[0:-6]}0/24')
+    print(f'\t\t\t\t\tvia {sheet.cell(row=x, column=5).value[:-3]}')
     print()
