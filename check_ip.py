@@ -17,7 +17,7 @@ sheet = wb_obj.active
 max_col = sheet.max_column
 max_row = sheet.max_row
 ip = 10
-teil = []
+# teil = []
 
 for j in range(2, max_row + 1):
     host = sheet.cell(row=j,column=4).value
