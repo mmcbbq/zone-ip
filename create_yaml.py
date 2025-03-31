@@ -13,4 +13,5 @@ ip = 10
 
 for x in range(2,max_row):
     print(f'        - to {sheet.cell(row=x, column=4).value[0:-6]}0/24')
+    print(f'          via {sheet.cell(row=x, column=5).value[:-3]}')
     print()
